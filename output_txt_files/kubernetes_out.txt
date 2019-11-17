@@ -1,0 +1,22 @@
+<paste log output from Kubernetes-mediated prediction, here>
+
+Kubernetes run script output:
+
+deployment.apps/udacity created
+NAME                      READY   STATUS    RESTARTS   AGE
+udacity-54dff9f5c-bfgll   1/1     Running   0          31s
+Nagendras-MacBook-Air:project-ml-microservice-kubernetes nagen$ Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+
+Kubernetes pod logs output:
+
+[2019-11-17 12:28:47,944] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2019-11-17 12:28:47,967] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-11-17 12:28:47,980] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-11-17 12:28:47,986] INFO in app: Prediction Value Output: [20.35373177134412]
+127.0.0.1 - - [17/Nov/2019 12:28:47] "POST /predict HTTP/1.1" 200 -
