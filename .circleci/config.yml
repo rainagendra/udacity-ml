@@ -22,8 +22,8 @@ jobs:
         - v1-dependencies-
 
     - run:
-       name: install dependencies
-       command: |
+        name: install dependencies
+        command: |
          python3 -m venv venv
          source venv/bin/activate
          make install
