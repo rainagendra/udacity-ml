@@ -25,8 +25,19 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
+* Create a virtualenv and activate by running 'make setup'
+* Activate virtualenv by running 'source ~/.devops/bin/activate'
 * Run `make install` to install the necessary dependencies
+
+## Files details
+* Dockerfile - This file contains steps for building docker image for app.py application.
+* Makefile - This file contains set of directives used for setting up python virtual environment, it also has directive for linting app.py
+* app.py - This file contains source code of machine learning service.
+* make_prediction.sh - This script will be used to provide json input to machine learning service. 
+* requirements.txt - This file contains all dependencies needed by app.py
+* run_docker.sh - This script will be used to build and run machine learning service in a container.
+* run_kubernetes.sh - This script will be used for running machine learning service as a kubernetes deployment.
+* upload_docker.sh - This script will be used to push docker image into docker hub repository. 
 
 ### Running `app.py`
 
