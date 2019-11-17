@@ -9,7 +9,6 @@ COPY model_data /app/model_data
 COPY requirements.txt /app/
 ## Step 3:
 # Install packages from requirements.txt
-RUN pip install --upgrade pip 
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # hadolint ignore=DL3013
 #Copy program into /app, puuting this step after RUN so that update in app.py will not force to run pip install again and again
