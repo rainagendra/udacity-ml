@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+<include [![CircleCI](https://circleci.com/gh/rainagendra/udacity-ml.svg?style=svg)](https://circleci.com/gh/rainagendra/udacity-ml)>
 
 ## Project Overview
 
