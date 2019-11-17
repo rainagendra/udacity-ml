@@ -1,4 +1,4 @@
-<include [![CircleCI](https://circleci.com/gh/rainagendra/udacity-ml.svg?style=svg)](https://circleci.com/gh/rainagendra/udacity-ml)>
+[![CircleCI](https://circleci.com/gh/rainagendra/udacity-ml.svg?style=svg)](https://circleci.com/gh/rainagendra/udacity-ml)
 
 ## Project Overview
 
